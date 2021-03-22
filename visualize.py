@@ -10,10 +10,13 @@ from zipfile import ZipFile
 class FontsScheme:
     def __init__(self, fonts_dir):
 
-        font_url = "https://freefontsfamily.com/download/Times-New-Roman-Font/"
-        font_zip_path = wget.download(font_url, out=fonts_dir)
-        with ZipFile(font_zip_path, 'r') as zipObj:
-            zipObj.extractall(path=fonts_dir)
+        if not os.path.exists(fonts_dir):
+            os.mkdir(fonts_dir)
+        if not os.path.exists(os.path.join(fonts_dir, 'Times New Roman')):
+            font_url = "https://freefontsfamily.com/download/Times-New-Roman-Font/"
+            font_zip_path = wget.download(font_url, out=fonts_dir)
+            with ZipFile(font_zip_path, 'r') as zipObj:
+                zipObj.extractall(path=fonts_dir)
 
         regular_font_path = os.path.join(fonts_dir, "Times New Roman/times new roman.ttf")
         bold_font_path = os.path.join(fonts_dir, "Times New Roman/times new roman bold.ttf")

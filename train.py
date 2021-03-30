@@ -57,7 +57,7 @@ class Trainer:
 
     def load_model(self):
         """
-        Method to load the pretrained audio and text classifier models.
+        Method to load the pretrained audio and text models used for feature extraction.
         """
         audio_model_path = os.path.join(self._models_dir, 'audio_model.pt')
         self.fusion_model.load_pretrained_audio_model(audio_model_path)

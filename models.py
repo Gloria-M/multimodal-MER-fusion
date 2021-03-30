@@ -147,7 +147,8 @@ class FusionNet(nn.Module):
 
     def load_pretrained_audio_model(self, model_path):
         """
-        Method to load pre-trained weights and freeze gradients for audio model.
+        Method to load pre-trained weights and freeze gradients for audio model 
+        to be use as feature extractor.
         :param model_path: path to pre-trained audio model
         """
         self._model_audio = AudioNet()
@@ -160,7 +161,8 @@ class FusionNet(nn.Module):
 
     def load_pretrained_text_model(self, model_path):
         """
-        Method to load pre-trained weights and freeze gradients for text model.
+        Method to load pre-trained weights and freeze gradients for text model 
+        to be use as feature extractor.
         :param model_path: path to pre-trained text model
         """
         self._model_text = TextNet(self._embedding_matrix)

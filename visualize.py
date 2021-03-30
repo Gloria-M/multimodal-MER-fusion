@@ -1,12 +1,12 @@
+"""
+This module contains all methods and functions necessary for visualization.
+"""
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 from matplotlib.colors import LinearSegmentedColormap
 import wget
-"""
-This module contains all methods and functions necessary for visualization.
-"""
 from zipfile import ZipFile
 
 

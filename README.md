@@ -77,11 +77,5 @@ Control the training by modifying the default values for the following parameter
 
 <br/>  
 
-## To Do
-
-> Write `help` for arguments.  
-
-<br/>  
-
 ### Tools  
 `PyTorch`, `librosa`, `NLTK`, `Word2Vec`

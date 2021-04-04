@@ -3,7 +3,7 @@
 This repository presents the **second part** of the ***multimodal Music Emotion Recognition Analysis*** series.  
 The MER task is tackled from a regeression perspective: fusions of Convolutional NN models are trained on combinations of features extracted from **audio & lyrics** and **audio & comments**, to predict values for the two dimensions of emotion: ***valence*** and ***arousal***.  
   
- In the **first part**, that can be found [here](https://github.com/Gloria-M/multimodal-MER-simple), unimodal CNN models are separately trained on audio, lyrics and comments features
+### In the **first part**, that can be found [here](https://github.com/Gloria-M/multimodal-MER-simple), unimodal CNN models are separately trained on audio, lyrics and comments features
   
 
 ### For the complete description of the methods and experiments, please refer to [multimodal MER](https://gloria-m.github.io/multimodal.html).   
